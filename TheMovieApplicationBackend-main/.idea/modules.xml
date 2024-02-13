@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/MovieApplication/APIGateway/APIGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/BookmarkService/BookmarkService.iml" filepath="$PROJECT_DIR$/MovieApplication/BookmarkService/BookmarkService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/EurekaService/EurekaService.iml" filepath="$PROJECT_DIR$/MovieApplication/EurekaService/EurekaService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/MovieApplication.iml" filepath="$PROJECT_DIR$/MovieApplication/MovieApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/MovieDisplayService/MovieDisplayService.iml" filepath="$PROJECT_DIR$/MovieApplication/MovieDisplayService/MovieDisplayService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/MovieSearchService/MovieSearchService.iml" filepath="$PROJECT_DIR$/MovieApplication/MovieSearchService/MovieSearchService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/PlaylistService/PlaylistService.iml" filepath="$PROJECT_DIR$/MovieApplication/PlaylistService/PlaylistService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TheMovieApplicationBackend-main.iml" filepath="$PROJECT_DIR$/.idea/TheMovieApplicationBackend-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/UserAuthService/UserAuthService.iml" filepath="$PROJECT_DIR$/MovieApplication/UserAuthService/UserAuthService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieApplication/UserService/UserService.iml" filepath="$PROJECT_DIR$/MovieApplication/UserService/UserService.iml" />
+    </modules>
+  </component>
+</project>

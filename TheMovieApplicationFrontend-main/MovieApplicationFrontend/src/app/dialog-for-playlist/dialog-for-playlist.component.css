@@ -1,0 +1,65 @@
+p .add
+{
+   
+    background: white;
+    color: black;
+    padding: 10px 12px 10px 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.add-btn
+{
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    /* border: none; */
+}
+
+.addMovie button
+{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.addMovie button:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+.add-btn:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+p .add:hover
+{
+    background: black;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+input
+{
+    /* font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 10px; */
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Ubuntu:wght@500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  height: 100%;
+  background-color: #141414;
+}
+.head{
+	padding:20px;
+  font-weight: bold;
+}
+.col-div-6{
+	width: 50%;
+	float: left;
+}
+
+.col-div-3{
+	width: 25%;
+	float: left;
+}
+.box{
+	width: 85%;
+	height: 100px;
+	background-color: #ffffff;
+	margin-left: 10px;
+  margin-top: 20px;
+	padding:10px;
+  border-radius: 20px;
+}
+.box:hover
+{
+  background: #b8b8b8;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+.box p{
+	 font-size: 35px;
+    color: black;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.box p span{
+	font-size: 20px;
+	font-weight: 400;
+	color: black
+}
+.bx{
+	font-size: 40px!important;
+    float: right;
+    margin-top: 35px!important;
+    color: #000000;
+    padding-right: 10px;
+}
+
+.content-box{
+	padding: 20px;
+  
+}
+
+.content-box p{
+	margin: 0px;
+  font-size: 20px;
+  color: #f7403b;
+  font-weight: bold;
+}
+.content-box p span{
+  float: right;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+.box-8, .box-4{
+	width: 95%;
+	background-color: #f0f0f0;
+	height: 430px;
+	border-radius: 20px;
+  justify-content: center;
+}
+
+.box-8{
+	margin-left: 30px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+td, th {
+  text-align: left;
+  padding:15px;
+  color: rgb(12, 12, 12);
+  border-bottom: 1px solid #81818140;
+}
+
+.content-box button
+{
+  background: #141414;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.content-box button:hover
+{
+  background: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease;
+}

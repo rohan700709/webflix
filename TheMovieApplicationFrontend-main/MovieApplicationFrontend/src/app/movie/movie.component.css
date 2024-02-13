@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Ubuntu:wght@500&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    max-width: 100%;
+    height: 100vh;
+    /* background-image: url(https://image.tmdb.org/t/p/original/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg); */
+    /* background-image: url(https://image.tmdb.org/t/p/original/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg); */
+    background-position: center;
+    background-size: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.row
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col
+{
+    flex-basis: 50%;
+    
+}
+
+h1
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+label
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.card
+{
+    /* width: 300px;
+    height: 460px; */
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background: rgba(255, 255, 255, 0);
+}
+
+.card img
+{
+    border-radius: 10px;
+
+}
+
+.card:hover img{
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+}
+
+
+/* .about-wrapper{
+    height: 100vh;
+    background-image: url(https://image.tmdb.org/t/p/original/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg);
+}
+
+
+ background-image: url(https://image.tmdb.org/t/p/w300/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg); */
+
+

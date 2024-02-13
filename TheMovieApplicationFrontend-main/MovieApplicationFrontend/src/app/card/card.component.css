@@ -1,0 +1,405 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Ubuntu:wght@500&display=swap');
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #141414;
+}
+.example-container {
+    background: #141414;
+  }
+  .slide
+  {
+     width: 1400px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 10px;
+  }
+
+  .picsum-img-wrapper img
+  {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 40px;
+      
+  }
+
+  .carousel-caption h3
+  {
+      font-size: 20px;
+      font-weight: bold;
+      background: #ffffffb7;
+      color: black;
+      display: inline;
+      width: 400px;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    .page
+    {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    .pagination
+    {
+        margin-top: 8px;
+        padding: 0;
+    }
+
+    /*   
+    .carousel-caption
+    {
+        background: #1414147c;;
+    } */
+    
+    .carousel-caption p
+    {
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      /* background: #1414147c; */
+      display: inline-block;
+      width: 250px;
+      padding: 10px;
+  }
+
+  .picsum-img-wrapper img
+  {
+      width: 900px;
+      border-radius: 10px;
+  }
+
+  .picsum-img-wrapper img:hover
+  {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+  }
+  
+  .tool
+  {
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tool ul
+  {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+
+  .example-sidenav {
+    padding: 20px;
+    background: black;
+  }
+
+.remove
+{
+    text-align: center;
+    margin-bottom: .8rem;
+    
+}
+
+.movie{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.178);
+    background-color: #1b1313;
+    position:relative;
+    overflow: hidden;
+}
+
+.movie:hover
+{
+    cursor: pointer;
+}
+
+.movie:hover img
+{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in;
+}
+
+.movie img{
+    width: 100%;   
+    border-radius: 15px;
+}
+
+
+.movie-info
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.actions
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+/* .actions button
+{
+    
+} */
+
+.actions .bookmark
+{
+    border-radius: 50%;
+    border: none;
+    /* padding: 10px 15px; */
+    font-size: 30px;
+    background: none;
+    
+}
+
+.actions i
+{
+    margin: 0;
+    padding: 0;
+}
+
+.actions .wishlist{
+    padding: 5px 10px 3px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.actions .wishlist:hover{
+    background: white;
+    color: black;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.actions .bookmark:hover
+{
+    /* background-color: black; */
+    /* color: white; */
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in;
+}
+
+.actions .wishlist
+{
+    background-color: black;
+    color: white;
+}
+
+.movie-info h3{
+    margin-top: 0px;
+    font-size: 20px;
+}
+.page .pagination li a
+{
+    color: black;
+    border: none;
+}
+
+.page .pagination li a:hover
+{
+    background: black;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.movie-info span{
+    background-color: #1b1313;
+    padding: 9px 9px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.movie-info span.green
+{
+    border: 2px solid lightgreen;
+}
+.movie-info span.orange
+{
+    color: orange;
+}
+.movie-info span.red
+{
+    color: red;
+}
+
+.overview
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(247, 247, 247, 0.925);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview
+{
+    transform: translateY(0);
+}
+
+
+.example-sidenav ul{
+    list-style: none;
+}
+
+.example-sidenav ul li{
+    margin: 0 0px;
+    padding: 10px;
+}
+
+.example-sidenav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    
+}
+.tool ul li a
+  {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  
+  }
+
+.search_box
+{
+    /* transform: translate(-50%,-50%); */
+    background-color: #fcfcfc;
+    height: 40px;
+    /* width: 40px; */
+    border-radius: 40px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.input_box
+{
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition: 0.4s all;
+    /* line-height: 40px; */
+    /* width: 0; */
+    width: 240px;
+    padding: 0 6px 0 7px;
+}
+
+.btnn
+{
+    color: #1abc9c;
+    /* float: right; */
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    /* line-height: 40px; */
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* .search_box:hover .input_box
+{
+    width: 240px;
+    padding: 0 6px 0 7px;
+} */
+
+
+.example-sidenav ul li a:hover{
+    color: #1b1b1b;
+    background-color: white;
+    cursor: pointer;
+}
+
+.tool ul .side-nav a:hover
+{
+    color: #1b1b1b;
+    background-color: white;
+    cursor: pointer;
+}
+
+.date 
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.date h3{
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+    display: inline;
+}
+
+.date p{
+    display: inline;
+}
+
+@media (max-width: 1080px)
+{
+    nav ul{
+        height: 10px;
+        width: 100%;
+        top: 80px;
+        text-align: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        display: contents;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .movie{
+        width: 250px;
+        margin: 1rem;
+        border-radius: 15px;
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.178);
+        background-color: #1b1313;
+        position:relative;
+        overflow: hidden;
+        font-size: 10px;
+    }
+}
+

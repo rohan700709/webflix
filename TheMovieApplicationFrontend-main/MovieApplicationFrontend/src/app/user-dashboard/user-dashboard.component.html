@@ -1,0 +1,65 @@
+<div class="about-wrapper">
+    <div class="about-left">
+        <div class="about-left-content">
+            <div>
+                <div class="shadow">
+                    <div class="about-img">
+                        <img src="https://i.pinimg.com/originals/2b/90/0d/2b900d5612554cd0b5edf7d8e848c3ea.png"
+                            alt="profile image">
+                    </div>
+                </div>
+                <h2 style="margin-top: 20px;">{{user.userName}}</h2>
+                <h3>{{user.userEmail}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="about-right">
+        <h1>hi<span>!</span></h1>
+        <h2>Your Current Details</h2>
+        <div class="about-para">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>{{user.userName}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td>{{user.userEmail}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Password</th>
+                        <td colspan="2">{{user.password}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="about-btns">
+            <button (click)="toggleDisplay()" class="btn btn-primary">Edit</button>
+        </div>
+        <form *ngIf= "isDisplay" class="about-para" [formGroup]= "userData" (ngSubmit)= "onSubmit(userData)">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td><input style="text-align: center;" type="text" class="form-control" id="name"
+                            [(ngModel)]= "user.userName" formControlName="userName"></td>
+                    </tr>
+                    <!-- <tr>
+                        <th scope="row">Email</th>
+                        <td><input style="text-align: center;" type="email" class="form-control" id="email"
+                                placeholder="Enter Email"></td>
+                    </tr> -->
+                    <tr>
+                        <th scope="row">Password</th>
+                        <td><input style="text-align: center;" type="text" class="form-control" id="password"
+                            [(ngModel)]= "user.password" formControlName="password"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="about-btns">
+                <button class="btn btn-primary" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div>
+    <div class="tool">
+
+        <!-- <label for="playlists">Select playlist</label> -->
+        <select name="playlists" id="playlists" [(ngModel)]="playlistName"
+            (change)="getMovieDetails($any($event.target).value)">
+            <option value="">Select Playlist</option>
+            <option *ngFor="let p of listOfPlaylistName; let i as index" [value]="p">{{p}}
+            </option>
+
+
+        </select>
+
+
+        <button (click)="deletePlaylistFromList()">Delete Playlist</button>
+    </div>
+    <div class="a1" *ngIf="movieDetails.length==0" style="background-color: #1b1313;">
+        <p class="a2">Please Select the Playlist!!</p>
+    </div>
+</div>
+<div class="body">
+    <main id="main">
+        <div class="movie" *ngFor="let list of movieDetails; let i = index">
+            <div class="remove">
+                <button mat-raised-button (click)="deleteMovie(i)">Remove</button>
+            </div>
+            <img src="{{IMG_URL}}{{list.poster_path}}" alt="{{list.title}}">
+
+            <div class="movie-info">
+                <h3>{{list.title}}</h3>
+                <span class="green">{{list.vote_average.toFixed(1)}}</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                <!-- <div class="actions">
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon"> 
+                <mat-icon>menu</mat-icon>Wishlist
+            </button>
+            <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                <mat-icon>bookmark</mat-icon>
+            </button>
+        </div> -->
+                {{list.overview}}
+            </div>
+        </div>
+    </main>
+</div>

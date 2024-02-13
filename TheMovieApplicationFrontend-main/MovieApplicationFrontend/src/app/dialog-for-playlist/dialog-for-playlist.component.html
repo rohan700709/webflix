@@ -1,0 +1,8 @@
+<h1>Your playlist</h1>
+<div *ngFor="let list of listOfPlaylistName, index as i">
+    <p class="addMovie">{{list}}&nbsp;&nbsp;<button [mat-dialog-close]="true" (click)="addToPlaylist(i)">+</button></p>
+</div>
+<p>Create new Playlist&nbsp;&nbsp;<button class="add" (click)="createPlaylist()"><i
+            class='bx bxs-add-to-queue'></i></button></p>
+<input *ngIf="value" type="text" [(ngModel)]="newPlaylist"><button class="add-btn" *ngIf="value"
+    (click)="addNewPlaylist()">Add</button>

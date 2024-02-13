@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Ubuntu:wght@500&display=swap');
+
+ /* html, body{
+    height: 100%;
+    margin: 0px;
+} */
+/* body { 
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;  
+    
+} */
+
+/* {
+    box-sizing: border-box;
+} */
+
+/* :root{
+    --primary-color:#1f1313;
+    --secondary-color: #373b69;
+}
+body { 
+    background-color: var(--primary-color);
+    margin: 0; 
+    font-family: 'Poppins', sans-serif; 
+} */
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MovieSearchService" />
+        <module name="UserService" />
+        <module name="UserAuthService" />
+        <module name="EurekaService" />
+        <module name="APIGateway" />
+        <module name="MovieDisplayService" />
+        <module name="BookmarkService" />
+        <module name="PlaylistService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGateway" target="11" />
+      <module name="BookmarkService" target="11" />
+      <module name="EurekaService" target="11" />
+      <module name="MovieApplication" target="11" />
+      <module name="MovieDisplayService" target="11" />
+      <module name="MovieSearchService" target="11" />
+      <module name="PlaylistService" target="11" />
+      <module name="UserAuthService" target="11" />
+      <module name="UserService" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="BookmarkService" options="-parameters" />
+      <module name="EurekaService" options="-parameters" />
+      <module name="MovieDisplayService" options="-parameters" />
+      <module name="MovieSearchService" options="-parameters" />
+      <module name="PlaylistService" options="-parameters" />
+      <module name="UserAuthService" options="-parameters" />
+      <module name="UserService" options="-parameters" />
+    </option>
+  </component>
+</project>

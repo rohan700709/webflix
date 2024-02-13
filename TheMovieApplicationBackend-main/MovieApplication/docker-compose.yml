@@ -1,0 +1,87 @@
+version: "3.3"
+services:
+  mysqlservice:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    container_name: mysql-container
+    network_mode: host
+    hostname: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USERNAME: user
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  mongodbservice:
+    image: mongo:latest
+    container_name: mongo-container
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 27017:27017
+  userauthenticationservice:
+    container_name: user-authentication-service
+    build: UserAuthService/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8086:8086
+    depends_on:
+      - mysqlservice
+      - apigatewayservice
+      - eurekaserver
+    restart: always
+  usertrackservice:
+    container_name: user-service
+    build: UserService/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8084:8084
+    depends_on:
+      - mongodbservice
+      - apigatewayservice
+      - eurekaserver
+    restart: always
+  playlistservice:
+    container_name: playlist-service
+    build: PlaylistService/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8083:8083
+    depends_on:
+      - mongodbservice
+      - apigatewayservice
+      - eurekaserver
+    restart: always
+  bookmarkservice:
+    container_name: bookmark-service
+    build: bookmark/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8085:8085
+    depends_on:
+      - mongodbservice
+      - apigatewayservice
+      - eurekaserver
+    restart: always
+  apigatewayservice:
+    container_name: api-gateway
+    build: APIGateway/
+    network_mode: host
+    ports:
+      - 9000:9000
+    depends_on:
+      - eurekaserver
+    restart: always
+  eurekaserver:
+    image: eureka-service
+    build: EurekaService/
+    network_mode: host
+    ports:
+      - 8761:8761
+    restart: always
+
+

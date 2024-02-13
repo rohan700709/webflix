@@ -1,0 +1,21 @@
+<button (click)="getData()">GetData</button>
+<div class="container" style="background-image: url({{backdropPath}}{{data.backdrop_path}});">
+    <div class="row">
+        <div class="col">
+            <h1>{{data.title}}</h1>
+            <label>Release Date</label>
+            <p>{{data.release_date}}</p>
+            <label>Ratings</label>
+            <p>{{data.vote_average.toFixed(1)}}</p>
+            <label>Genre</label>
+            <p>{{data.genre_ids}}</p>
+            <label>Overview</label>
+            <p>{{data.overview}}</p>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="{{posterPath}}{{data.poster_path}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>

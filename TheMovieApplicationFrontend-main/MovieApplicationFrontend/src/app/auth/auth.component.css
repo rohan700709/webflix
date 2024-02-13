@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Ubuntu:wght@500&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    max-height: 100%;
+    
+}
+
+#appContainer{
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    background-image: url(https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjBwb3N0ZXJ8ZW58MHx8MHx8&w=1000&q=80);
+}
+
+#cardStyle{
+    background-color: #fff;
+    box-shadow: 5px 3px 10px 5px gray;
+    border-radius: 13px;
+}
+
+.btn
+{
+    background-color: black;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    
+}
+
+.btn:hover
+{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

@@ -1,0 +1,37 @@
+<!-- <app-toasts></app-toasts> -->
+<div class="a1" *ngIf="movieDetails.length==0">
+    <p class="a2">Please add some movies in your bookmark to enjoy!!</p>
+</div>
+<div class="body">
+    <main id="main">
+        <div class="movie" *ngFor="let list of movieDetails;let i = index">
+
+            <div class="remove">
+                <button mat-raised-button (click)="deleteBookmark(i)">Remove</button>
+            </div>
+            <img src="{{IMG_URL}}{{list.poster_path}}" alt="{{list.title}}">
+
+            <div class="movie-info">
+                <h3>{{list.title}}</h3>
+                <span class="green">{{list.vote_average.toFixed(1)}}</span>
+            </div>
+
+            <div class="overview">
+                <h3>Overview</h3>
+                <div class="actions">
+                    <!-- <button mat-icon-button aria-label="Example icon button with a vertical three dot icon"> 
+                    <mat-icon>menu</mat-icon>Wishlist
+                </button> -->
+                    <!-- <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                    <mat-icon>bookmark</mat-icon>
+                </button> -->
+                </div>
+                {{list.overview}}
+                <div class="date">
+                    <h3>Release Date: </h3>
+                    <p>{{list.release_date}}</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

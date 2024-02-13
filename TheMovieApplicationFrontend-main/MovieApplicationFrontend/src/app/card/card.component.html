@@ -1,0 +1,103 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 14%;">
+        <ul style="margin-top: 30px; padding: 0; position: fixed;">
+            <li><a class="active" (click)="getTrending()"><i class='bx bx-trending-up'></i>&nbsp; Trending</a></li>
+            <li><a (click)="getPopular()"><i class='bx bxs-party'></i>&nbsp;
+                    Popular</a></li>
+            <li><a (click)="getUpcoming()"><i class='bx bxs-hourglass-top'></i>&nbsp; UpComing</a></li>
+            <li><a (click)="getTopRated()"><i class='bx bxs-bolt'></i>&nbsp; TopRated</a></li>
+        </ul>
+        <!-- <button (click)="showFiller = !showFiller" mat-raised-button>
+            Search
+        </button> -->
+        <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p> -->
+
+    </mat-drawer>
+
+    <div>
+        <div class="tool">
+            <ul>
+                <li class="side-nav"><a (click)="drawer.toggle()"><i class='bx bx-menu-alt-left'></i>More</a></li>
+                <!-- <li class="search"><input type="text" [(ngModel)]="search" name="search" id="search"><a
+                        (click)="searchMovies()">Search</a></li> -->
+                <li class="search_box"><input class="input_box" type="text" placeholder="Search Movie"
+                        [(ngModel)]="search" name="search" id="search">
+                    <a class="btnn" (click)="searchMovies()"><i class='bx bx-search'
+                            style="color: black; font-weight: bolder;"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide">
+
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let list of movieLists.movieList; let i = index">
+                    <div class="picsum-img-wrapper">
+                        <img src="{{backdrop}}{{list.backdrop_path}}" alt="Random first slide">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>{{list.title}}</h3><br>
+                        <!-- <p>{{list.release_date}}</p> -->
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <main id="main">
+
+            <div class="movie" *ngFor="let list of movieLists.movieList; let i = index" (click)="getMovieById(i)">
+
+
+                <img src="{{IMG_URL}}{{list.poster_path}}" alt="{{list.title}}">
+
+                <div class="movie-info">
+                    <h3>{{list.title}}</h3>
+                    <span class="green">{{list.vote_average.toFixed(1)}}</span>
+                </div>
+
+                <div class="overview">
+                    <h3 style="font-weight: bold;">Overview</h3>
+                    <div class="actions">
+                        <button *ngIf="loggedIn()" class="wishlist" (click)="addToPlaylist(i)"><i
+                                class='bx bx-heart'></i>&nbsp;&nbsp;
+                            Playlist
+                        </button>
+                        <button *ngIf="loggedIn()" class="bookmark" (click)="addBookmark(i)"><i
+                                class='bx bxs-bookmark-plus'></i></button>
+                    </div>
+                    {{list.overview}}
+                    <div class="date">
+                        <h3>Release Date: </h3>
+                        <p>{{list.release_date}}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</mat-drawer-container>
+<!-- <button class="btn btn-success" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success toast</button>&nbsp; -->
+
+<div class="page">
+
+    <!-- <ngb-pagination class="pagination" [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination> -->
+    <nav aria-label="...">
+        <ul class="pagination">
+
+            <li class="page-item"><a class="page-link" (click)="pageOne()">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" (click)="pageTwo()">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" (click)="pageThree()">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+<!-- <div class="pagination">
+    <div class="page" id="prev">Previous Page</div>
+    <div class="current" id="current">1</div>
+    <div class="page" id="next">Next Page</div>
+</div> -->

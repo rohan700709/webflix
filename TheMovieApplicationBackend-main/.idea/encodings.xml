@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/MovieApplication/APIGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/APIGateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/BookmarkService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/BookmarkService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/EurekaService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/EurekaService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/MovieDisplayService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/MovieDisplayService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/MovieSearchService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/MovieSearchService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/PlaylistService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/PlaylistService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/UserAuthService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/UserAuthService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/UserService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/UserService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MovieApplication/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
